@@ -1,0 +1,7 @@
+schema: https://backend06.codebootcamp.co.kr/graphql09
+generates:
+  ./src/commons/types/generated/types.ts:
+    plugins:
+      - typescript
+    config:
+      typesPrefix: I
