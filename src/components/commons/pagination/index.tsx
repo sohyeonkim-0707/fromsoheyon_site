@@ -24,8 +24,8 @@ const Page = styled.span`
     line-height: 24px;
   }
   @media ${breakPoints.mobile} {
-    font-size: 10px;
     margin-bottom: 30px;
+    font-size: 10px;
   }
 `;
 

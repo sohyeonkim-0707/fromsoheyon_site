@@ -87,7 +87,6 @@ export const Remark = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-
   @media ${breakPoints.tablet} {
     margin: 0;
     font-size: 20px;
@@ -111,7 +110,6 @@ export const Size = styled.p`
   font-weight: 400;
   font-size: 25px;
   color: #d9d9d9;
-
   @media ${breakPoints.tablet} {
     font-size: 15px;
   }
@@ -120,14 +118,13 @@ export const Size = styled.p`
     font-size: 10px;
   }
 `;
+
 export const Contents = styled.p`
   margin-bottom: 100px;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-
   @media ${breakPoints.tablet} {
     margin-bottom: 70px;
     font-size: 20px;
@@ -176,7 +173,6 @@ export const BuyBtn = styled.button`
     color: #d9d9d9;
     transition: all 0.5s;
   }
-
   @media ${breakPoints.tablet} {
     font-size: 20px;
   }
@@ -214,7 +210,9 @@ export const BtnBox = styled.div`
 export const BackBtn = styled.button`
   width: 230px;
   height: 50px;
-
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  background-color: white;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -222,9 +220,6 @@ export const BackBtn = styled.button`
   line-height: 24px;
   text-align: center;
   color: #000000;
-  border: 1px solid #d9d9d9;
-  border-radius: 50px;
-  background-color: white;
   outline: none;
   cursor: pointer;
   :hover {

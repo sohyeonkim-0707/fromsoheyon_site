@@ -3,23 +3,23 @@ import { EditOutlined, CloseOutlined } from "@ant-design/icons";
 import { breakPoints } from "../../media/media";
 
 export const Container = styled.div`
-  padding: 20px 0px;
-  width: 100%;
-  height: 147px;
-  border-bottom: 1px solid #d9d9d9;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  height: 147px;
+  padding: 20px 0px;
+  border-bottom: 1px solid #d9d9d9;
   @media ${breakPoints.mobile} {
     height: 120px;
   }
 `;
 
 export const TopWrapper = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 `;
 
 export const Name = styled.div`
@@ -75,14 +75,14 @@ export const OptionWrapper = styled.div``;
 
 export const EditIcon = styled(EditOutlined)`
   margin-right: 10px;
-  cursor: pointer;
   color: gray;
+  cursor: pointer;
 `;
 
 export const DeleteIcon = styled(CloseOutlined)`
   margin-right: 10px;
-  cursor: pointer;
   color: gray;
+  cursor: pointer;
 `;
 
 export const Contents = styled.div`

@@ -36,7 +36,6 @@ export const Box = styled.div`
 `;
 
 export const Title = styled.div`
-  /* border: 1px solid blue; */
   width: 100%;
   font-family: "Montserrat";
   font-style: normal;
@@ -53,24 +52,24 @@ export const Title = styled.div`
 export const Id = styled.input`
   width: 100%;
   height: 80px;
-  outline: none;
   border: 1px solid #d9d9d9;
+  outline: none;
   ::placeholder {
-    font-size: 16px;
     padding-left: 10px;
+    font-size: 16px;
   }
   @media ${breakPoints.tablet} {
     height: 60px;
     ::placeholder {
-      font-size: 5px;
       padding-left: 5px;
+      font-size: 5px;
     }
   }
   @media ${breakPoints.mobile} {
     height: 30px;
     ::placeholder {
-      font-size: 2px;
       padding-left: 2px;
+      font-size: 2px;
     }
   }
 `;
@@ -78,24 +77,24 @@ export const Id = styled.input`
 export const Password = styled.input`
   width: 100%;
   height: 80px;
-  outline: none;
   border: 1px solid #d9d9d9;
+  outline: none;
   ::placeholder {
-    font-size: 16px;
     padding-left: 10px;
+    font-size: 16px;
   }
   @media ${breakPoints.tablet} {
     height: 60px;
     ::placeholder {
-      font-size: 5px;
       padding-left: 5px;
+      font-size: 5px;
     }
   }
   @media ${breakPoints.mobile} {
     height: 30px;
     ::placeholder {
-      font-size: 2px;
       padding-left: 2px;
+      font-size: 2px;
     }
   }
 `;

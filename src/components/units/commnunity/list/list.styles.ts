@@ -46,13 +46,13 @@ export const Row = styled.div`
 `;
 
 export const Number = styled.div`
+  width: 10%;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   text-align: center;
   font-size: 25px;
   line-height: 30px;
-  width: 10%;
   @media ${breakPoints.tablet} {
     font-size: 20px;
   }
@@ -62,20 +62,17 @@ export const Number = styled.div`
 `;
 
 export const Title = styled(Number)`
-  /* background-color: yellow; */
+  width: 40%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 40%;
 `;
 
 export const Writer = styled(Number)`
   width: 25%;
-  /* background-color: yellow; */
 `;
 export const Date = styled(Number)`
   width: 25%;
-  /* background-color: yellow; */
 `;
 
 export const PaginationBox = styled.div`
@@ -127,7 +124,7 @@ export const WriteBtn = styled.button`
   @media ${breakPoints.mobile} {
     width: 200px;
     height: 30px;
-    font-size: 10px;
     margin-top: 10px;
+    font-size: 10px;
   }
 `;

@@ -34,10 +34,10 @@ export const left = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
   align-items: center;
   height: 800px;
   width: 50%;
-  position: relative;
   @media ${breakPoints.tablet} {
   }
   @media ${breakPoints.mobile} {
@@ -119,15 +119,15 @@ export const Title = styled.h1`
 export const InputText = styled.input`
   width: 100%;
   height: 50px;
-  outline: none;
   border: 1px solid #d9d9d9;
+  outline: none;
 `;
 
 export const InputText2 = styled.input`
   width: 100%;
   height: 50px;
-  outline: none;
   border: 1px solid #d9d9d9;
+  outline: none;
 `;
 
 export const InputText3 = styled(ReactQuill)`
@@ -166,6 +166,9 @@ export const BackBtn = styled.button`
   width: 230px;
   height: 50px;
   margin-top: 79px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  background-color: white;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -173,9 +176,6 @@ export const BackBtn = styled.button`
   line-height: 24px;
   text-align: center;
   color: #000000;
-  border: 1px solid #d9d9d9;
-  border-radius: 50px;
-  background-color: white;
   outline: none;
   cursor: pointer;
   :hover {
@@ -192,8 +192,8 @@ export const BackBtn = styled.button`
   @media ${breakPoints.mobile} {
     width: 200px;
     height: 30px;
-    font-size: 10px;
     margin-top: 10px;
+    font-size: 10px;
   }
 `;
 
@@ -215,7 +215,7 @@ export const CancleBtn = styled(BackBtn)`
 
 export const Error = styled.div`
   color: red;
-  width: 100%;
+  font-size: 10px;
   @media ${breakPoints.tablet} {
     font-size: 10px;
   }

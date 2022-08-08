@@ -14,7 +14,7 @@ export const schema = yup.object().shape({
   contents: yup
     .string()
     .min(5, "상품설명은 최소 5자 이상입니다.")
-    .max(500, "상품설명은 최대 500자 까지입니다.")
+    .max(1000, "상품설명은 최대 1000자 까지입니다.")
     .required("필수 입력 사항입니다."),
   price: yup.string().required("숫자만 입력해주세요."),
 });
@@ -33,7 +33,7 @@ export const editSchema = yup.object({
   contents: yup
     .string()
     .min(5, "상품설명은 최소 5자 이상입니다.")
-    .max(500, "상품설명은 최대 500자 까지입니다.")
+    .max(1000, "상품설명은 최대 1000자 까지입니다.")
     .required("필수 입력 사항입니다."),
   price: yup.string().required("숫자만 입력해주세요."),
 });

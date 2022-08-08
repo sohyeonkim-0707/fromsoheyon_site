@@ -28,15 +28,15 @@ export const Wrapper01 = styled.section`
   button {
     width: 230px;
     height: 50px;
+    margin-left: 26px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50px;
+    background-color: white;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
-    margin-left: 26px;
-    border: 1px solid #d9d9d9;
-    background-color: white;
-    border-radius: 50px;
     cursor: pointer;
     :hover {
       background: #184124;
@@ -133,6 +133,14 @@ export const CancleBtn = styled.img`
   width: 28px;
   height: 28px;
   cursor: pointer;
+  @media ${breakPoints.tablet} {
+    width: 20px;
+    height: 20px;
+  }
+  @media ${breakPoints.mobile} {
+    width: 15px;
+    height: 15px;
+  }
 `;
 
 export const Wrapper03 = styled.section`
@@ -196,9 +204,8 @@ export const Wrapper04 = styled.section`
       width: 100px;
       height: 30px;
       margin-top: 30px;
-      font-size: 10px;
-      margin-top: 10px;
       margin-left: 10px;
+      font-size: 10px;
     }
   }
 `;

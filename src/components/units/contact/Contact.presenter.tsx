@@ -5,13 +5,12 @@ export default function ContactUI() {
   return (
     <S.Container>
       <S.Wrapper>
-        <S.Arrow src="./arrow.png"></S.Arrow>
+        <S.Arrow src="/arrow.png"></S.Arrow>
         <S.Title>CONTACT</S.Title>
         <S.InnerWrapper>
           <S.Email href="mailto:hjthgus777@gmail.com">
             hjthgus777@gmail.com
           </S.Email>
-
           <S.Tel>010.8735.3125</S.Tel>
         </S.InnerWrapper>
       </S.Wrapper>

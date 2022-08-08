@@ -14,7 +14,7 @@ export const schema = yup.object().shape({
   contents: yup
     .string()
     .min(5, "내용은 최소 5자 이상입니다.")
-    .max(500, "내용은 최대 500자 까지입니다.")
+    .max(1000, "내용은 최대 1000자 까지입니다.")
     .required("내용은 반드시 입력해주세요!"),
   password: yup
     .string()

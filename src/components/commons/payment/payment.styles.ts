@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
-  width: 82%;
-  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 82%;
+  height: 70%;
 `;
 
 export const Title = styled.div`
@@ -23,11 +23,10 @@ export const Select = styled.select`
 `;
 
 export const BtnBox = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-
   button {
     width: 100px;
     height: 30px;

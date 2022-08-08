@@ -27,13 +27,13 @@ export const Wrapper = styled.div`
 `;
 
 export const left = styled.section`
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 800px;
-  position: relative;
   width: 50%;
+  height: 800px;
   @media ${breakPoints.tablet} {
   }
   @media ${breakPoints.mobile} {
@@ -104,22 +104,22 @@ export const Title = styled.h1`
 export const InputText = styled.input`
   width: 100%;
   height: 50px;
-  outline: none;
   border: 1px solid #d9d9d9;
+  outline: none;
 `;
 
 export const InputText2 = styled.input`
   width: 100%;
   height: 50px;
-  outline: none;
   border: 1px solid #d9d9d9;
+  outline: none;
 `;
 
 export const InputText3 = styled.input`
   width: 100%;
   height: 292px;
-  outline: none;
   border: 1px solid #d9d9d9;
+  outline: none;
 `;
 
 export const BtnBox = styled.div`
@@ -148,6 +148,9 @@ export const BackBtn = styled.button`
   width: 230px;
   height: 50px;
   margin-top: 79px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  background-color: white;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -155,9 +158,6 @@ export const BackBtn = styled.button`
   line-height: 24px;
   text-align: center;
   color: #000000;
-  border: 1px solid #d9d9d9;
-  border-radius: 50px;
-  background-color: white;
   outline: none;
   cursor: pointer;
   :hover {
@@ -196,6 +196,7 @@ export const CancleBtn = styled(BackBtn)`
 
 export const Error = styled.div`
   color: red;
+  font-size: 10px;
   @media ${breakPoints.tablet} {
     font-size: 10px;
   }

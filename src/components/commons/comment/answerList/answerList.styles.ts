@@ -76,8 +76,8 @@ export const DateString = styled.div`
 
 export const EditIcon = styled(EditOutlined)`
   margin-right: 10px;
-  cursor: pointer;
   color: gray;
+  cursor: pointer;
 `;
 
 export const UpdateIconButton = styled.button`
@@ -89,8 +89,8 @@ export const UpdateIconButton = styled.button`
 
 export const DeleteIcon = styled(CloseOutlined)`
   margin-right: 10px;
-  cursor: pointer;
   color: gray;
+  cursor: pointer;
 `;
 
 export const DeleteIconButton = styled.button`

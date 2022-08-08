@@ -12,12 +12,12 @@ export const Wrapper = styled.nav`
   z-index: 2;
 
   @media ${breakPoints.tablet} {
-    padding: 5px 15px;
     height: 50px;
+    padding: 5px 15px;
   }
   @media ${breakPoints.mobile} {
-    padding: 0 5px;
     height: 20px;
+    padding: 0 5px;
   }
 `;
 
@@ -44,9 +44,9 @@ export const Logo = styled.h1`
 `;
 
 export const Menu = styled.ul`
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 `;
 
 export const MenuList = styled.li`

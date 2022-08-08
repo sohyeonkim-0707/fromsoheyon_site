@@ -41,7 +41,7 @@ export default function CartUI(props: ICartUIProps) {
                 <S.Name>{el?.name}</S.Name>
                 <S.Amount>1</S.Amount>
                 <S.Price>{el?.price?.toLocaleString("ko-KR")}₩</S.Price>
-                <S.CancleBtn src="./cancle.png"></S.CancleBtn>
+                <S.CancleBtn src="/cancle.png"></S.CancleBtn>
               </S.InnerBox>
             ))}
           </>

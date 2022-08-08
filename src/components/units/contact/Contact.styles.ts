@@ -29,22 +29,22 @@ export const Arrow = styled.img`
 `;
 
 export const Title = styled.div`
+  padding-left: 220px;
+  margin-bottom: 311px;
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 600;
   font-size: 80px;
   color: #000000;
-  padding-left: 220px;
-  margin-bottom: 311px;
   @media ${breakPoints.tablet} {
-    font-size: 60px;
     padding-left: 140px;
     margin-bottom: 200px;
+    font-size: 60px;
   }
   @media ${breakPoints.mobile} {
-    font-size: 40px;
     padding-left: 110px;
     margin-bottom: 100px;
+    font-size: 40px;
   }
 `;
 

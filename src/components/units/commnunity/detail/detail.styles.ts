@@ -99,10 +99,10 @@ export const Contents = styled.div`
 `;
 
 export const Video = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
   margin-bottom: 100px;
 `;
 
@@ -119,13 +119,11 @@ export const BtnBox = styled.div`
     div {
       display: flex;
       flex-direction: column;
-      /* border: 1px solid red; */
       justify-content: center;
       align-items: center;
     }
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
   }
@@ -134,6 +132,9 @@ export const BtnBox = styled.div`
 export const Backbtn = styled.button`
   width: 230px;
   height: 50px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  background-color: white;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -141,9 +142,6 @@ export const Backbtn = styled.button`
   line-height: 24px;
   text-align: center;
   color: #000000;
-  border: 1px solid #d9d9d9;
-  border-radius: 50px;
-  background-color: white;
   outline: none;
   transition: all 0.5s;
   cursor: pointer;
@@ -160,8 +158,8 @@ export const Backbtn = styled.button`
   @media ${breakPoints.mobile} {
     width: 200px;
     height: 30px;
-    font-size: 10px;
     margin-top: 10px;
+    font-size: 10px;
   }
 `;
 
