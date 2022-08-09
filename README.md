@@ -68,11 +68,6 @@
 
 #### 4. Shop
 
-- 무한 스크롤
-
-  ![](https://velog.velcdn.com/images/hjthgus777/post/054da476-396c-40fd-815e-34624b5ce49a/image.gif)
-
-
 - 상품 CRUD
 
   ![](https://velog.velcdn.com/images/hjthgus777/post/1e889ef3-32c3-469e-9d60-9fd47e319fe2/image.gif)
@@ -144,6 +139,3 @@
 
 ![](https://velog.velcdn.com/images/hjthgus777/post/02ff3947-c999-4b05-afd2-e2bf38081aa8/image.gif)
 
-**[mobild](max-width: 380px)**
-
-![](https://velog.velcdn.com/images/hjthgus777/post/2df297f1-f11f-4474-9afa-5101a82953e9/image.gif)
