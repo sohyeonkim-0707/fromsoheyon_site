@@ -1,7 +1,6 @@
 import * as S from "../answerList.styles";
 import MarketCommentAnswer from "../../answer/answer.container";
 import { getDate } from "../../../../../commons/libraries/date";
-import { Modal } from "antd";
 import { useMutation } from "@apollo/client";
 import { useState } from "react";
 import {
@@ -33,7 +32,7 @@ export default function AnswerListItemUI(props) {
         ],
       });
     } catch (error) {
-      if (error instanceof Error) Modal.error({ content: error.message });
+      if (error instanceof Error) alert(error.message);
     }
   };
 

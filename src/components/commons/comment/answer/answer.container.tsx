@@ -1,5 +1,4 @@
 import ShopCommentAnswerUI from "./answer.presenter";
-import { Modal } from "antd";
 import { useMutation } from "@apollo/client";
 import { useState } from "react";
 import { FETCH_USED_ITEM_QUESTION_ANSWERS } from "../answerList/answerList.queris";
@@ -45,11 +44,11 @@ export default function ShopCommentAnswer(props) {
           },
         ],
       });
-      console.log(data, "답글");
       setIsValid(false);
       props.setIsAnswer((prev) => !prev);
+      alert("답글이 등록되었습니다.");
     } catch (error) {
-      if (error instanceof Error) Modal.error({ content: error.message });
+      if (error instanceof Error) alert(error.message);
     }
   };
 
@@ -71,9 +70,9 @@ export default function ShopCommentAnswer(props) {
         ],
       });
       props.setIsEdit(false);
-      Modal.success({ content: "댓글이 수정되었습니다." });
+      alert("답글이 수정되었습니다.");
     } catch (error) {
-      if (error instanceof Error) Modal.error({ content: error.message });
+      if (error instanceof Error) alert(error.message);
     }
   };
 

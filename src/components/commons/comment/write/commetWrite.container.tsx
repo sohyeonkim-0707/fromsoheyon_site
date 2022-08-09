@@ -1,5 +1,4 @@
 import ShopCommentWriteUI from "./commetWrite.presenter";
-import { Modal } from "antd";
 import { useEffect } from "react";
 import { useMutation } from "@apollo/client";
 import { useRouter } from "next/router";
@@ -31,7 +30,6 @@ export default function ShopCommentWrite(props) {
     }
   );
 
-  // watch 함수를 사용하면 다음과 유저가 입력하는 값을 실시간으로 보여준다.
   const contentsLength = watch().contents?.length;
 
   // 📌 댓글 등록하기
@@ -51,11 +49,10 @@ export default function ShopCommentWrite(props) {
           },
         ],
       });
-      Modal.success({ content: "댓글이 등록되었습니다." });
+      alert("댓글이 등록되었습니다.");
       setValue("contents", "");
     } catch (error) {
-      if (error instanceof Error)
-        Modal.error({ content: "댓글이 등록되지 않았습니다." });
+      if (error instanceof Error) alert("댓글이 등록되지 않았습니다.");
     }
   };
 
@@ -77,11 +74,11 @@ export default function ShopCommentWrite(props) {
           },
         ],
       });
-      Modal.success({ content: "댓글이 수정되었습니다." });
+      alert("댓글이 수정되었습니다.");
       props.setIsEdit?.(false);
     } catch (error) {
       if (error instanceof Error) console.log(error.message);
-      Modal.error({ content: "수정되지 않았습니다." });
+      alert("수정되지 않았습니다.");
     }
   };
 

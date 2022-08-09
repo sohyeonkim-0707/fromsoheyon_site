@@ -1,5 +1,4 @@
 import MarketCommentListUI from "./commentList.presenter";
-import { Modal } from "antd";
 import { useMutation, useQuery } from "@apollo/client";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -64,15 +63,11 @@ export default function MarketCommentList() {
 
       setUseditemQuestionId("");
 
-      Modal.success({
-        content: "댓글 삭제가 완료되었습니다!",
-      });
+      alert("댓글 삭제가 완료되었습니다!");
       router.push(`/shop/${router.query.itemId}`);
     } catch (error) {
       if (error instanceof Error) console.log(error.message);
-      Modal.error({
-        content: error.message,
-      });
+      alert(error.message);
     }
   };
 
