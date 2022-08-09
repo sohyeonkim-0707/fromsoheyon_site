@@ -70,7 +70,8 @@
 
 - 무한 스크롤
 
-  ![](https://velog.velcdn.com/images/hjthgus777/post/054da476-396c-40fd-815e-34624b5ce49a/image.gif)
+  <img src="https://velog.velcdn.com/images/hjthgus777/post/054da476-396c-40fd-815e-34624b5ce49a/image.gif"> 
+
 
 - 상품 CRUD
 
