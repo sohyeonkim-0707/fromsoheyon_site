@@ -31,7 +31,6 @@ export const Arrow = styled.img`
 export const Title = styled.div`
   padding-left: 220px;
   margin-bottom: 311px;
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 600;
   font-size: 80px;
@@ -54,7 +53,6 @@ export const InnerWrapper = styled.div`
 `;
 
 export const Email = styled.a`
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 40px;
@@ -70,7 +68,6 @@ export const Email = styled.a`
   }
 `;
 export const Tel = styled.div`
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 40px;

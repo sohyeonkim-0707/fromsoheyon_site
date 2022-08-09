@@ -32,7 +32,6 @@ export const TopWrapper = styled.div`
 `;
 
 export const Name = styled.div`
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -51,7 +50,6 @@ export const CommentFetchHeader = styled.div`
   margin-bottom: 10px;
 `;
 export const Contents = styled.div`
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -64,7 +62,6 @@ export const Contents = styled.div`
 `;
 
 export const DateString = styled.div`
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;

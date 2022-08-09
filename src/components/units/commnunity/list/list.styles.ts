@@ -4,7 +4,6 @@ import { breakPoints } from "../../../commons/media/media";
 export const Container = styled.div`
   padding: 195px 153px 72px 153px;
   h1 {
-    font-family: "Montserrat";
     font-style: italic;
     font-weight: 400;
     font-size: 30px;
@@ -47,7 +46,6 @@ export const Row = styled.div`
 
 export const Number = styled.div`
   width: 10%;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -100,7 +98,6 @@ export const WriteBtn = styled.button`
   border: 1px solid #d9d9d9;
   border-radius: 50px;
   background-color: white;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

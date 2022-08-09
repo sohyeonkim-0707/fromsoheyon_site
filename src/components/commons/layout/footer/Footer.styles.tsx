@@ -19,7 +19,6 @@ export const Wrapper = styled.footer`
 
 export const MenuList = styled.div`
   margin-bottom: 36px;
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 30px;
@@ -42,7 +41,6 @@ export const Instagram = styled.a`
   margin-bottom: 36px;
   background: #184124;
   border: none;
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 30px;

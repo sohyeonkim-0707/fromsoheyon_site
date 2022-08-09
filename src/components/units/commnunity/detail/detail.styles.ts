@@ -14,7 +14,6 @@ export const Container = styled.main`
 export const Name = styled.div`
   margin-bottom: 16px;
   text-align: right;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -32,7 +31,6 @@ export const Name = styled.div`
 
 export const Date = styled.div`
   margin-bottom: 23px;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -53,7 +51,6 @@ export const Title = styled.div`
   width: 100%;
   margin-bottom: 16px;
   text-align: left;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -135,7 +132,6 @@ export const Backbtn = styled.button`
   border: 1px solid #d9d9d9;
   border-radius: 50px;
   background-color: white;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

@@ -23,7 +23,6 @@ export const TopWrapper = styled.div`
 `;
 
 export const Name = styled.div`
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -42,7 +41,6 @@ export const BottomWrapper = styled.div`
 `;
 
 export const DateString = styled.div`
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -86,7 +84,6 @@ export const DeleteIcon = styled(CloseOutlined)`
 `;
 
 export const Contents = styled.div`
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

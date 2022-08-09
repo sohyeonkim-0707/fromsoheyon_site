@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.div`
-  font-family: "Montserrat";
   font-weight: 400;
   font-size: 20px;
 `;
@@ -18,7 +17,6 @@ export const Title = styled.div`
 export const Select = styled.select`
   width: 100%;
   height: 30px;
-  font-family: "Montserrat";
   font-style: italic;
 `;
 
@@ -33,7 +31,6 @@ export const BtnBox = styled.div`
     border: 1px solid #d9d9d9;
     background-color: white;
     border-radius: 50px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;

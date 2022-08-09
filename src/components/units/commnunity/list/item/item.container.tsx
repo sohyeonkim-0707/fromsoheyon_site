@@ -27,7 +27,6 @@ const Row = styled.div`
 
 const Number = styled.div`
   width: 10%;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   text-align: center;

@@ -37,7 +37,6 @@ export const Box = styled.div`
 
 export const Title = styled.div`
   width: 100%;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -104,7 +103,6 @@ export const LoginBtn = styled.button`
   height: 80px;
   background: #d9d9d9;
   border: none;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -129,7 +127,6 @@ export const LoginBtn = styled.button`
 `;
 
 export const Forgot = styled.div`
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -148,7 +145,6 @@ export const SignUpBtn = styled.button`
   border: none;
   outline: none;
   background: #d9d9d9;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

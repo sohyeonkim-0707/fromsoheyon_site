@@ -9,6 +9,6 @@ export const globalStyles = css`
   }
   @font-face {
     font-family: "MyFont";
-    src: url(/fonts/Montserrat-Thin.ttf);
+    src: url(/fonts/Montserrat-Light.ttf);
   }
 `;

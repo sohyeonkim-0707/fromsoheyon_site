@@ -32,7 +32,6 @@ export const Wrapper01 = styled.section`
     border: 1px solid #d9d9d9;
     border-radius: 50px;
     background-color: white;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -61,7 +60,6 @@ export const Wrapper01 = styled.section`
 export const Wrapper02 = styled.section``;
 
 export const Title = styled.h1`
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 30px;
@@ -91,7 +89,6 @@ export const InnerBox = styled.div`
 `;
 
 export const Nodata = styled.div`
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -113,7 +110,6 @@ export const Photo = styled.img`
 
 export const Name = styled.div`
   width: 20%;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -157,7 +153,6 @@ export const Wrapper03 = styled.section`
   }
   div {
     margin: 0 50px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -182,7 +177,6 @@ export const Wrapper04 = styled.section`
     border: 1px solid #d9d9d9;
     outline: none;
     cursor: pointer;
-    font-family: "Montserrat";
     font-style: italic;
     font-weight: 400;
     font-size: 30px;

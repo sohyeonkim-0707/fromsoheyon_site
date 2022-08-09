@@ -23,7 +23,6 @@ export const Wrapper = styled.nav`
 
 export const Logo = styled.h1`
   height: 45px;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -53,7 +52,6 @@ export const MenuList = styled.li`
   margin-left: 20px;
   padding: 0;
   float: left;
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 30px;

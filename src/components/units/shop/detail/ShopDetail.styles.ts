@@ -66,7 +66,6 @@ export const Inner01 = styled.div``;
 export const Title = styled.h1`
   margin: 0;
   margin-bottom: 90px;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -83,7 +82,6 @@ export const Title = styled.h1`
 
 export const Remark = styled.p`
   margin: 0 0 35px 0;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -105,7 +103,6 @@ export const SizeBox = styled.div`
 
 export const Size = styled.p`
   margin: 0 0 35px 0;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -121,7 +118,6 @@ export const Size = styled.p`
 
 export const Contents = styled.p`
   margin-bottom: 100px;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -137,7 +133,6 @@ export const Contents = styled.p`
 
 export const Price = styled.p`
   margin: 0;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -163,7 +158,6 @@ export const BuyBtn = styled.button`
   border-radius: 50px;
   background-color: white;
   outline: none;
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 25px;
@@ -213,7 +207,6 @@ export const BackBtn = styled.button`
   border: 1px solid #d9d9d9;
   border-radius: 50px;
   background-color: white;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

@@ -11,7 +11,6 @@ const Container = styled.div`
 `;
 const Page = styled.span`
   margin: 0px 10px;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

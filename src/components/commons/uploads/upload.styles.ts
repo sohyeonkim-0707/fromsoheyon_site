@@ -23,7 +23,6 @@ export const UploadBtn = styled.button`
   height: 61px;
   border: 1px solid #d9d9d9;
   background: white;
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 20px;

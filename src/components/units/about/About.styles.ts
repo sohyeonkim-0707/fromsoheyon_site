@@ -25,7 +25,6 @@ export const Wrapper = styled.section`
 
 export const Inner = styled.section`
   p {
-    font-family: "Montserrat";
     font-style: italic;
     font-weight: 400;
     font-size: 40px;
@@ -55,7 +54,6 @@ export const Inner = styled.section`
 
 export const Name = styled.p`
   margin-top: 50px;
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 30px;

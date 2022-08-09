@@ -33,7 +33,6 @@ export const Wrapper01 = styled.section`
     border: 1px solid #d9d9d9;
     background-color: white;
     border-radius: 50px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -63,7 +62,6 @@ export const Wrapper01 = styled.section`
 export const Wrapper02 = styled.section``;
 
 export const Title = styled.h1`
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
   font-size: 30px;
@@ -84,7 +82,6 @@ export const InnerBox = styled.div`
   padding: 15px 85px;
   border: 1px solid #d9d9d9;
   div {
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -118,7 +115,6 @@ export const Wrapper03 = styled.section`
     border: 1px solid #d9d9d9;
     background-color: white;
     border-radius: 50px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

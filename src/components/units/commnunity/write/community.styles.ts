@@ -103,7 +103,6 @@ export const InnerWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -169,7 +168,6 @@ export const BackBtn = styled.button`
   border: 1px solid #d9d9d9;
   border-radius: 50px;
   background-color: white;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
