@@ -6,7 +6,7 @@
 
 ### 🎨 Figma 목업 & 디자인 작업
 
-![](https://velog.velcdn.com/images/hjthgus777/post/95923b00-f6b5-4d5a-b467-7103da9bd293/image.png)
+  ![](https://velog.velcdn.com/images/hjthgus777/post/95923b00-f6b5-4d5a-b467-7103da9bd293/image.png)
 
 <br>
 
@@ -33,13 +33,9 @@
 
 #### 1. Main
 
-- [react slick carousel](https://react-slick.neostack.com/) 적용
-
-  ![](https://velog.velcdn.com/images/hjthgus777/post/57ed2f25-643c-4a8e-b491-d6a4e6cadfe9/image.gif)
-
 - Footer 영역 링크 클릭시 외부 SNS 이동
 
-![](https://velog.velcdn.com/images/hjthgus777/post/9a949800-1b5a-439a-88e4-b8ce0222f449/image.gif)
+  ![](https://velog.velcdn.com/images/hjthgus777/post/9a949800-1b5a-439a-88e4-b8ce0222f449/image.gif)
 
 <br>
 
@@ -50,7 +46,7 @@
 - yup 적용으로 에러 방지
 - 올 바르지 못한 값을 입력시 버튼 비활성화
 
-![](https://velog.velcdn.com/images/hjthgus777/post/f5f49e6c-08d7-4306-8f60-8ff5e68cdb52/image.gif)
+  ![](https://velog.velcdn.com/images/hjthgus777/post/f5f49e6c-08d7-4306-8f60-8ff5e68cdb52/image.gif)
 
 <br>
 
@@ -60,7 +56,7 @@
 
 - 기본 퍼블리싱 작업
 
-![](https://velog.velcdn.com/images/hjthgus777/post/f49568d0-4fe8-46c4-8343-c7868d195627/image.gif)
+  ![](https://velog.velcdn.com/images/hjthgus777/post/f49568d0-4fe8-46c4-8343-c7868d195627/image.gif)
 
 <br>
 
