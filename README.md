@@ -35,7 +35,7 @@
 
 - react slick carousell 적용
 
-  ![](https://velog.velcdn.com/images/hjthgus777/post/57ed2f25-643c-4a8e-b491-d6a4e6cadfe9/image.gif)
+<img src="https://velog.velcdn.com/images/hjthgus777/post/57ed2f25-643c-4a8e-b491-d6a4e6cadfe9/image.gif">
 
 - Footer 영역 링크 클릭시 외부 SNS 이동
 
@@ -70,7 +70,7 @@
 
 - 무한 스크롤
 
-  ![](https://velog.velcdn.com/images/hjthgus777/post/f5cc5df3-24e4-493d-88b4-c000f80236dc/image.gif)
+<img src="https://velog.velcdn.com/images/hjthgus777/post/f5cc5df3-24e4-493d-88b4-c000f80236dc/image.gif">
 
 - 상품 CRUD
 
@@ -145,4 +145,4 @@
 
 **[mobild](max-width: 380px)**
 
-![](https://velog.velcdn.com/images/hjthgus777/post/fed49ad2-6d2c-4ef2-93f8-90e41c2c9798/image.gif)
+<img src="https://velog.velcdn.com/images/hjthgus777/post/fed49ad2-6d2c-4ef2-93f8-90e41c2c9798/image.gif">
