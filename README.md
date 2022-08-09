@@ -146,5 +146,3 @@
 ![](https://velog.velcdn.com/images/hjthgus777/post/02ff3947-c999-4b05-afd2-e2bf38081aa8/image.gif)
 
 **[mobild](max-width: 380px)**
-
-![](https://velog.velcdn.com/images/hjthgus777/post/fed49ad2-6d2c-4ef2-93f8-90e41c2c9798/image.gif)
