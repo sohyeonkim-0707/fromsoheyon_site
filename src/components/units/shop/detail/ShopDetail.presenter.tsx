@@ -17,7 +17,7 @@ export default function ShopDetailUI(props: IShopDetailUIProps) {
           <S.Inner01>
             <S.Title>{props.data?.fetchUseditem?.name}</S.Title>
 
-            <S.Remark>{props.data?.fetchUseditem?.remark}ddd</S.Remark>
+            <S.Remark>{props.data?.fetchUseditem?.remark}</S.Remark>
 
             <S.SizeBox>
               <S.Size>A1/ 594mm*841mm</S.Size>
