@@ -58,9 +58,9 @@
 
 #### 3. About
 
-![](https://velog.velcdn.com/images/hjthgus777/post/f49568d0-4fe8-46c4-8343-c7868d195627/image.gif)
-
 - 기본 퍼블리싱 작업
+
+![](https://velog.velcdn.com/images/hjthgus777/post/f49568d0-4fe8-46c4-8343-c7868d195627/image.gif)
 
 <br>
 
@@ -70,7 +70,7 @@
 
 - 무한 스크롤
 
-  ![](https://velog.velcdn.com/images/hjthgus777/post/f5cc5df3-24e4-493d-88b4-c000f80236dc/image.gif)
+  ![](https://velog.velcdn.com/images/hjthgus777/post/054da476-396c-40fd-815e-34624b5ce49a/image.gif)
 
 - 상품 CRUD
 
@@ -145,4 +145,4 @@
 
 **[mobild](max-width: 380px)**
 
-![](https://velog.velcdn.com/images/hjthgus777/post/fed49ad2-6d2c-4ef2-93f8-90e41c2c9798/image.gif)
+![](https://velog.velcdn.com/images/hjthgus777/post/2df297f1-f11f-4474-9afa-5101a82953e9/image.gif)
