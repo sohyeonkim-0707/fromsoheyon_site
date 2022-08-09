@@ -22,23 +22,17 @@ export const Wrapper = styled.nav`
 `;
 
 export const Logo = styled.h1`
-  height: 45px;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 30px;
   text-align: center;
   cursor: pointer;
   z-index: 3;
   @media ${breakPoints.tablet} {
-    font-size: 30px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 25px;
   }
   @media ${breakPoints.mobile} {
-    font-size: 13px;
-    height: 20px;
-    line-height: 18px;
+    font-size: 10px;
   }
 `;
 
