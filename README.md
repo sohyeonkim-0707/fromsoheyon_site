@@ -6,7 +6,7 @@
 
 ### 🎨 Figma 목업 & 디자인 작업
 
-  ![](https://velog.velcdn.com/images/hjthgus777/post/95923b00-f6b5-4d5a-b467-7103da9bd293/image.png)
+![](https://velog.velcdn.com/images/hjthgus777/post/95923b00-f6b5-4d5a-b467-7103da9bd293/image.png)
 
 <br>
 
@@ -32,6 +32,10 @@
 ### 🖥 페이지 구성
 
 #### 1. Main
+
+- react slick carousell 적용
+
+  ![](https://velog.velcdn.com/images/hjthgus777/post/57ed2f25-643c-4a8e-b491-d6a4e6cadfe9/image.gif)
 
 - Footer 영역 링크 클릭시 외부 SNS 이동
 
@@ -63,6 +67,10 @@
 ---
 
 #### 4. Shop
+
+- 무한 스크롤
+
+  ![](https://velog.velcdn.com/images/hjthgus777/post/f5cc5df3-24e4-493d-88b4-c000f80236dc/image.gif)
 
 - 상품 CRUD
 
@@ -135,3 +143,6 @@
 
 ![](https://velog.velcdn.com/images/hjthgus777/post/02ff3947-c999-4b05-afd2-e2bf38081aa8/image.gif)
 
+**[mobild](max-width: 380px)**
+
+![](https://velog.velcdn.com/images/hjthgus777/post/fed49ad2-6d2c-4ef2-93f8-90e41c2c9798/image.gif)
