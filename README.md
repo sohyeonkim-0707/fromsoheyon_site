@@ -13,6 +13,7 @@ shop 페이지에서 인스타그램 피드처럼 사진들을 볼 수 있습니
 <br>
 
 ### 📡 Google Cloud Platform 를 통한 배포
+- 현재 http 만 배포됨. 
 
 <br>
 
