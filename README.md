@@ -128,7 +128,7 @@ shop 페이지에서 인스타그램 피드처럼 사진들을 볼 수 있습니
 
 #### 7. Contact
 
-- kakao map 연동
+- kakao map 연동, 클릭시 현재 위치로 길찾기 안내
 - 이메일 클릭시 메일 보내기
 
   ![](https://velog.velcdn.com/images/hjthgus777/post/e390b56f-f99f-4452-a024-e29ffb28a1e9/image.gif)
