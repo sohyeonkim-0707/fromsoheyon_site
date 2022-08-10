@@ -47,10 +47,11 @@ shop 페이지에서 인스타그램 피드처럼 사진들을 볼 수 있습니
 
 ---
 
-#### 2. Login & Logout
+#### 2. Login & SignUp
 
-- yup 적용으로 에러 방지
-- 올 바르지 못한 값을 입력시 버튼 비활성화
+- yup 적용 아이디, 비밀번호 유효성 검사
+- 로그아웃 적용 
+- 해당 입력 칸에 올 바르지 못한 값을 입력시 버튼 비활성화
 
   ![](https://velog.velcdn.com/images/hjthgus777/post/f5f49e6c-08d7-4306-8f60-8ff5e68cdb52/image.gif)
 
