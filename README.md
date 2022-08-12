@@ -45,11 +45,11 @@
 
 - react slick carousell 라이브러리를 사용해서 메인 화면의 이미지가 왼쪽으로 넘어가도록 작업했습니다.
 
-<img src="https://velog.velcdn.com/images/hjthgus777/post/57ed2f25-643c-4a8e-b491-d6a4e6cadfe9/image.gif">
+![](https://velog.velcdn.com/images/hjthgus777/post/57ed2f25-643c-4a8e-b491-d6a4e6cadfe9/image.gif)
 
 - Footer 영역의 메뉴를 클릭시 외부 SNS로 이동합니다.
 
-  ![](https://velog.velcdn.com/images/hjthgus777/post/9a949800-1b5a-439a-88e4-b8ce0222f449/image.gif)
+![](https://velog.velcdn.com/images/hjthgus777/post/45110a09-8c8d-4d44-afc3-cdb8bef5eae2/image.gif)
 
 <br>
 
@@ -59,7 +59,6 @@
 
 - react hook form 을 사용하여 구현하였습니다.
 - yup을 사용하여 잘못된 입력값이 들어올 경우 에러를 띄우고 버튼을 비활성화 시켰습니다.
-
   ![](https://velog.velcdn.com/images/hjthgus777/post/f5f49e6c-08d7-4306-8f60-8ff5e68cdb52/image.gif)
 
 <br>
@@ -156,8 +155,7 @@
 ![](https://velog.velcdn.com/images/hjthgus777/post/02ff3947-c999-4b05-afd2-e2bf38081aa8/image.gif)
 
 **[mobild](max-width: 380px)**
-
-<img src="https://velog.velcdn.com/images/hjthgus777/post/fed49ad2-6d2c-4ef2-93f8-90e41c2c9798/image.gif">
+![](https://velog.velcdn.com/images/hjthgus777/post/0500d9bd-a60f-485a-8fec-fb5cf3caee7b/image.gif)
 
 <br>
 
@@ -173,7 +171,7 @@
 
 - 마이페이지에서 cart, mypage, oder history 영역을 페이지 별로 나누지 않고 컴포넌트로 한 페이지에서 처리하면 렌더링 시간을 단축할 수 있지 않았을까?
 
-2. **성능 최적화하기 > 이미지부분**
+1. **성능 최적화하기 > 이미지부분**
 
 - Storage 용량 낭비 해결하기
   - 이미지 업로드 부분에서 Browser에 이미지를 등록하면 백엔드에서 storage에 이미지를 올려 url을 받아 그 url을 Browser에게 반환해주는 방식인데 이는 Storage 용량 낭비 문제 있다. 미리보기 성능을 올리기 위해서 FileReader()를 활용해 아직 파일을 업로드하지는 않은 상태로 임시주소를 만들어서 이미지를 보여주는것을 적용해보자.
