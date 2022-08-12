@@ -16,10 +16,10 @@ export default function MarketCommentListUI(props) {
           <ShopCommentListUIItem
             key={el._id}
             el={el}
-            id={el._id} // 📌 id 내려가기 시작 !!!!
+            id={el._id}
             onClickDelete={props.onClickDelete}
             userData={props.userData}
-          /> // 📌 el 내려가기 시작 !!!!
+          />
         ))}
       </InfiniteScroll>
     </Scroll>

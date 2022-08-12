@@ -8,8 +8,8 @@ export default function AnswerListUI(props) {
           (
             <AnswerListItemUI
               key={el._id}
-              el={el} // 📌 el 내려가기 시작
-              id={el._id} // 📌 id 내려가기 시작
+              el={el}
+              id={el._id}
               data={props.data}
               questionId={props.questionId}
             />

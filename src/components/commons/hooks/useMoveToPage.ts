@@ -10,7 +10,7 @@ export default function useMoveToPage() {
     setVisitedPage(path);
     router.push(path);
   };
-  // 객체로 리턴
+
   return {
     visitedPage,
     onClickMoveToPage,

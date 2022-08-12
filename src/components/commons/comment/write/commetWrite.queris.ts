@@ -1,6 +1,5 @@
 import { gql } from "@apollo/client";
 
-// 상품 댓글 등록
 export const CREATE_USED_ITEM_QUESTION = gql`
   mutation createUseditemQuestion(
     $createUseditemQuestionInput: CreateUseditemQuestionInput!
@@ -22,7 +21,6 @@ export const CREATE_USED_ITEM_QUESTION = gql`
   }
 `;
 
-// 상품 댓글 수정
 export const UPDATED_USED_ITEM_QUESTION = gql`
   mutation updateUseditemQuestion(
     $updateUseditemQuestionInput: UpdateUseditemQuestionInput!

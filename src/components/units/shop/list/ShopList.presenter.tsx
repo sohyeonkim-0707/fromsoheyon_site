@@ -7,7 +7,6 @@ import { IShopListProps } from "./ShopList.types";
 
 const Scroll = styled.div`
   width: 100%;
-  /* height: 2000px; */
   margin: 0 auto;
   overflow: auto;
   ::-webkit-scrollbar {

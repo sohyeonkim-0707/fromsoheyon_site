@@ -36,7 +36,6 @@ export default function Payment() {
     setAmount(event.target.value);
   };
 
-  // iport 충전하기
   const requestPay = () => {
     setIsOpen(false);
     const IMP = window.IMP;

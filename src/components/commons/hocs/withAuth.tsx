@@ -6,7 +6,6 @@ import { accessTokenState } from "../../../commons/store";
 
 // 권한 분기
 export const withAuth = (Component) => (props) => {
-  // 권한부기 로직 추가하기
   const router = useRouter();
   const [accessToken] = useRecoilState(accessTokenState);
   useEffect(() => {

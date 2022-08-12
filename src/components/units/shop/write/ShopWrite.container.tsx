@@ -65,7 +65,7 @@ export default function ShopWrite(props: any) {
     }
   };
 
-  // 📌 상품수정하기
+  // 📌 상품 수정하기
   const onClcikEditProduct = async (data: any) => {
     const currentFiles = JSON.stringify(fileUrls);
     const defaultFiles = JSON.stringify(data?.fetchUseditem?.images);
@@ -127,13 +127,10 @@ export default function ShopWrite(props: any) {
       onClcikEditProduct={onClcikEditProduct}
       onChangeFileUrls={onChangeFileUrls}
       onClickImageDelete={onClickImageDelete}
-      // 사진
       fileUrls={fileUrls}
-      // form
       register={register}
       formState={formState}
       handleSubmit={handleSubmit}
-      // 컴포넌트 재사용
       isEdit={props.isEdit}
     />
   );

@@ -4,7 +4,6 @@ import {
   UseFormRegister,
   UseFormStateReturn,
 } from "react-hook-form";
-// import { IMutationCreateUserArgs } from "../../../commons/types/generated/types";
 
 export interface FormValues {
   name?: string;

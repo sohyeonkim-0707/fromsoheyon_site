@@ -34,7 +34,7 @@ export default function ShopDetail() {
   >(CREATE_POINT_TRANSACTION_OF_BUYING_AND_SELLING);
   const [, setBasketItems] = useRecoilState(basketItemState);
 
-  // 📌 장바구니에 담기
+  // 📌 장바구니
   const onClickBasket = (el: any) => () => {
     const baskets = JSON.parse(localStorage.getItem("baskets") || "[]");
 
@@ -81,17 +81,14 @@ export default function ShopDetail() {
     }
   };
 
-  // 📌 목록 이동
   const onClickMoveToList = () => {
     router.push("/shop");
   };
 
-  // 📌 수정하기 이동
   const onClickMoveProductEdit = () => {
     router.push(`/shop/${router.query.itemId}/edit`);
   };
 
-  // 📌 삭제하기
   const onClickDelete = async () => {
     try {
       await deleteUseditem({
