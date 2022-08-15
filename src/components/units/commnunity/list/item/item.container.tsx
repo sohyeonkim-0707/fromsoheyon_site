@@ -3,6 +3,8 @@ import { useRecoilState } from "recoil";
 import { getDate } from "../../../../../commons/libraries/date";
 import { indexNum } from "../../../../../commons/store";
 import { breakPoints } from "../../../../commons/media/media";
+import { v4 as uuidv4 } from "uuid";
+import { KeyWord } from "../communityList.styles";
 
 const Row = styled.div`
   display: flex;
@@ -63,7 +65,14 @@ export default function Item(props: any) {
         id={props.el._id}
         onClick={props.onClickMoveToBoardDetail(props.el)}
       >
-        {props.el.title}
+        {props.el.title
+          .replaceAll(props.keyword, `#$%${props.keyword}#$%`)
+          .split("#$%")
+          .map((el: any) => (
+            <KeyWord key={uuidv4()} isMatched={props.keyword === el}>
+              {el}
+            </KeyWord>
+          ))}
       </Title>
       <Writer>{props.el.writer}</Writer>
       <Date>{getDate(props.el.createdAt)}</Date>

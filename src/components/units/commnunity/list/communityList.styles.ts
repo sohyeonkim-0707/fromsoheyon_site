@@ -22,6 +22,12 @@ export const Container = styled.div`
   }
 `;
 
+export const InnerTop = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
 export const Table = styled.div`
   height: 772px;
   border-width: 1px 0px;
@@ -124,4 +130,12 @@ export const WriteBtn = styled.button`
     margin-top: 10px;
     font-size: 10px;
   }
+`;
+
+interface IBoardListStyleProps {
+  isMatched: boolean;
+}
+
+export const KeyWord = styled.span`
+  color: ${(props: IBoardListStyleProps) => (props.isMatched ? "orange" : "")};
 `;

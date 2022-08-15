@@ -3,11 +3,20 @@ import Item from "./item/item.container";
 import * as S from "./communityList.styles";
 import { v4 as uuidv4 } from "uuid";
 import { ICommunityUIProps } from "./communityList.types";
+import SearchBars from "../../../commons/searchBar";
 
 export default function CommunityUI(props: ICommunityUIProps) {
   return (
     <S.Container>
-      <h1>COMMUNITY</h1>
+      <S.InnerTop>
+        <h1>COMMUNITY</h1>
+        <SearchBars
+          refetch={props.refetch}
+          refetchBoardsCount={props.refetchBoardsCount}
+          onChangeKeyword={props.onChangeKeyword}
+        />
+      </S.InnerTop>
+
       <S.Table>
         <S.Row>
           <S.Number>N</S.Number>

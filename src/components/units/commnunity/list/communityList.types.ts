@@ -11,4 +11,6 @@ export interface ICommunityUIProps {
   ) => Promise<ApolloQueryResult<any>>;
   onClickMoveToBoardDetail: (el: any) => (event: any) => void;
   onClickNew: () => void;
+  keyword: string;
+  onChangeKeyword: (value: string) => void;
 }
