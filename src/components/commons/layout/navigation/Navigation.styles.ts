@@ -28,6 +28,10 @@ export const Logo = styled.h1`
   text-align: center;
   cursor: pointer;
   z-index: 3;
+  :hover {
+    color: #d9d9d9;
+    transition: all 0.5s;
+  }
   @media ${breakPoints.tablet} {
     font-size: 25px;
   }
