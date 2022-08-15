@@ -30,4 +30,11 @@ export interface ICommunityWriteProps {
   reset: UseFormReset<FieldValues>;
   getValues: UseFormGetValues<FieldValues>;
   isEdit: boolean;
+
+  onClickRoutingModal: () => void;
+  onClickErrorModal: () => void;
+  onClickUpdatedModal: () => void;
+  alertModal: boolean;
+  modalContents: string;
+  errorAlertModal: boolean;
 }

@@ -1,7 +1,5 @@
-// 게시글 등록하기
-
 import { useAuth } from "../../../src/components/commons/hooks/useAuth";
-import CommunityWrite from "../../../src/components/units/commnunity/write/community.container";
+import CommunityWrite from "../../../src/components/units/commnunity/write/communityWrite.container";
 
 export default function CommnunityNewPage() {
   useAuth();

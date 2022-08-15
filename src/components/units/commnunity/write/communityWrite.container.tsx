@@ -9,11 +9,11 @@ import {
   IQueryFetchBoardArgs,
   IUpdateBoardInput,
 } from "../../../../commons/types/generated/types";
-import { FETCH_BOARD } from "../detail/detail.queris";
-import CommnunityWriteUI from "./community.presenter";
-import { CREATE_BOARD, UPDATE_BOARD } from "./community.queris";
-import { FormValues } from "./community.types";
-import { editSchema, schema } from "./community.validation";
+import { FETCH_BOARD } from "../detail/communityDetail.queris";
+import CommnunityWriteUI from "./communityWrite.presenter";
+import { CREATE_BOARD, UPDATE_BOARD } from "./communityWrite.queris";
+import { FormValues } from "./communityWrite.types";
+import { editSchema, schema } from "./communityWrite.validation";
 
 export default function CommunityWrite(props: any) {
   const router = useRouter();
@@ -41,13 +41,32 @@ export default function CommunityWrite(props: any) {
     mode: "onChange",
   });
 
-  // 📌 react-quill
   const onChangeContents = (value: string) => {
     setValue("contents", value === "<p><br></p>" ? "" : value);
     trigger("contents");
   };
 
-  // 📌 게시글 등록하기
+  const [alertModal, setAlertModal] = useState(false);
+  const [modalContents, setModalContents] = useState("");
+  const [errorAlertModal, setErrorAlertModal] = useState(false);
+
+  const [boardId, setBoardId] = useState("");
+
+  const onClickRoutingModal = () => {
+    router.push(`/community/${boardId}`);
+    setAlertModal(false);
+  };
+
+  const onClickErrorModal = () => {
+    setErrorAlertModal(false);
+  };
+
+  const onClickUpdatedModal = () => {
+    router.push(`/community/${router.query.useditemId}`);
+    setAlertModal(false);
+  };
+
+  // 게시글 등록하기
   const onClickUploadBoard = async (data: ICreateBoardInput) => {
     try {
       const result = await createBoard({
@@ -62,21 +81,23 @@ export default function CommunityWrite(props: any) {
           },
         },
       });
-      console.log("등록📌", result);
-      alert("게시글을 등록합니다.");
-      router.push(`/community/${result.data.createBoard._id}`);
+      setAlertModal(true);
+      setModalContents("게시물을 등록합니다.");
+      setBoardId(result.data.createBoard._id);
     } catch (error) {
-      // alert(error.message);
+      setModalContents(error.message);
+      setErrorAlertModal(true);
     }
   };
 
-  // 📌 수정하기
+  // 수정하기
   const onClickEditBoard = async (data: IUpdateBoardInput) => {
     const currentFiles = JSON.stringify(fileUrls);
     const defaultFiles = JSON.stringify(data.fetchBoard?.images);
     const isChangedFiles = currentFiles !== defaultFiles;
     if (!data.title && !data.contents && !data.youtubeUrl && !isChangedFiles) {
-      alert("수정한 내용이 없습니다.");
+      setAlertModal(true);
+      setModalContents("수정한 내용이 없습니다.");
     }
     try {
       const result = await updateBoard({
@@ -91,9 +112,13 @@ export default function CommunityWrite(props: any) {
           },
         },
       });
-      alert("게시글 수정이 완료되었습니다!");
-      router.push(`/community/${result.data.updateBoard._id}`);
-    } catch (error) {}
+      setAlertModal(true);
+      setModalContents("게시글 수정이 완료되었습니다");
+      setBoardId(result.data.updateBoard._id);
+    } catch (error) {
+      setModalContents(error.message);
+      setErrorAlertModal(true);
+    }
   };
 
   const onChangeFileUrls = (fileUrl: string, index: number) => {
@@ -122,16 +147,19 @@ export default function CommunityWrite(props: any) {
       onChangeContents={onChangeContents}
       onChangeFileUrls={onChangeFileUrls}
       onClickImageDelete={onClickImageDelete}
-      // 사진
       fileUrls={fileUrls}
-      // form
       register={register}
       formState={formState}
       handleSubmit={handleSubmit}
       reset={reset}
       getValues={getValues}
-      // 컴포넌트 재사용
       isEdit={props.isEdit}
+      onClickRoutingModal={onClickRoutingModal}
+      onClickErrorModal={onClickErrorModal}
+      onClickUpdatedModal={onClickUpdatedModal}
+      alertModal={alertModal}
+      modalContents={modalContents}
+      errorAlertModal={errorAlertModal}
     />
   );
 }

@@ -46,7 +46,7 @@ export default function MarketCommentList() {
     });
   }
 
-  // 📌 댓글 삭제하기
+  //  댓글 삭제하기
   const onClickDelete = async (event) => {
     try {
       await deleteUseditemQuestion({
@@ -62,7 +62,6 @@ export default function MarketCommentList() {
       });
 
       setUseditemQuestionId("");
-
       alert("댓글 삭제가 완료되었습니다!");
       router.push(`/shop/${router.query.itemId}`);
     } catch (error) {

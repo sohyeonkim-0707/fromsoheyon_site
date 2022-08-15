@@ -6,8 +6,8 @@ import {
   IQueryFetchBoardsArgs,
   IQueryFetchBoardsCountArgs,
 } from "../../../../commons/types/generated/types";
-import CommunityUI from "./list.presenter";
-import { FETCH_BOARDS, FETCH_BOARDS_COUNT } from "./list.queris";
+import CommunityUI from "./communityList.presenter";
+import { FETCH_BOARDS, FETCH_BOARDS_COUNT } from "./communityList.queris";
 
 export default function Community() {
   const router = useRouter();

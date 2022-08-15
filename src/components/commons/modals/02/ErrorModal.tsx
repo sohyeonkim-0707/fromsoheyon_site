@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   position: fixed;
+  border-radius: 20px;
+  border: 1px solid #d9d9d9;
   left: 50%;
   top: 50%;
   padding: 45px 120px;
@@ -24,16 +26,20 @@ export const ModalText = styled.div`
 `;
 
 export const ConfirmBtn = styled.button`
-  width: 123px;
-  height: 32px;
-  border: none;
-  border-radius: 50;
-  background-color: #184124;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  border-radius: 50px;
+  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 15px;
   text-align: center;
   cursor: pointer;
+  :hover {
+    background: #184124;
+    color: white;
+  }
 `;
 
 export default function ErrorModal(props) {
@@ -51,6 +57,7 @@ export default function ErrorModal(props) {
           height: "0px",
           backgroundColor: "#FFFFFF",
         }}
+        width={200}
         footer={null}
         centered={true}
       >

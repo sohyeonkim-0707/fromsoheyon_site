@@ -14,7 +14,7 @@ export const withAuth = (Component) => (props) => {
         const newAccessToken = await getAccessToken();
         if (!newAccessToken) {
           router.push("/login");
-          alert("로그인 후 이용 가능합니다!!!");
+          alert("로그인 후 이용 가능합니다.");
         }
       }
     }

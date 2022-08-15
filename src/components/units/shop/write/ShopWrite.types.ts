@@ -26,4 +26,11 @@ export interface IShopWriteUIProps {
   formState: FormState<FormValues>;
   handleSubmit: UseFormHandleSubmit<FormValues>;
   isEdit: boolean;
+
+  onClickRoutingModal: () => void;
+  onClickErrorModal: () => void;
+  onClickUpdatedModal: () => void;
+  alertModal: boolean;
+  modalContents: string;
+  errorAlertModal: boolean;
 }

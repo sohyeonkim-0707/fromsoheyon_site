@@ -41,9 +41,30 @@ export default function ShopWrite(props: any) {
 
   const { register, handleSubmit, formState } = useForm<FormValues>({
     resolver: yupResolver(props.isEdit ? editSchema : schema),
+    mode: "onChange",
   });
 
-  // 📌 상품 등록하기
+  const [alertModal, setAlertModal] = useState(false);
+  const [modalContents, setModalContents] = useState("");
+  const [errorAlertModal, setErrorAlertModal] = useState(false);
+
+  const [useditemId, setUseditemId] = useState("");
+
+  const onClickRoutingModal = () => {
+    router.push(`/shop/${useditemId}`);
+    setAlertModal(false);
+  };
+
+  const onClickErrorModal = () => {
+    setErrorAlertModal(false);
+  };
+
+  const onClickUpdatedModal = () => {
+    router.push(`/shop/${router.query.useditemId}`);
+    setAlertModal(false);
+  };
+
+  // 상품 등록하기
   const onClickUploadProduct = async (data: any) => {
     try {
       const result = await createUseditem({
@@ -57,15 +78,16 @@ export default function ShopWrite(props: any) {
           },
         },
       });
-      console.log(result, "상품등록 써글");
-      alert("상품을 등록합니다.");
-      router.push(`/shop/${result.data.createUseditem._id}`);
+      setAlertModal(true);
+      setModalContents("상품을 등록합니다.");
+      setUseditemId(result.data.createUseditem._id);
     } catch (error) {
-      // if (error instanceof Error) alert(error.message);
+      setModalContents(error.message);
+      setErrorAlertModal(true);
     }
   };
 
-  // 📌 상품 수정하기
+  // 상품 수정하기
   const onClcikEditProduct = async (data: any) => {
     const currentFiles = JSON.stringify(fileUrls);
     const defaultFiles = JSON.stringify(data?.fetchUseditem?.images);
@@ -77,7 +99,8 @@ export default function ShopWrite(props: any) {
       !data.price &&
       !isChangedFiles
     ) {
-      alert("수정한 내용이 없습니다.");
+      setAlertModal(true);
+      setModalContents("수정한 내용이 없습니다.");
     }
 
     try {
@@ -93,21 +116,21 @@ export default function ShopWrite(props: any) {
           },
         },
       });
-      alert("상품 수정이 완료되었습니다!");
-      router.push(`/shop/${result.data.updateUseditem._id}`);
+      setAlertModal(true);
+      setModalContents("상품 수정이 완료되었습니다!");
+      setUseditemId(result.data.updateUseditem._id); //
     } catch (error) {
-      alert(error.message);
+      setModalContents(error.message);
+      setErrorAlertModal(true);
     }
   };
 
-  // 📌 사진업로드
   const onChangeFileUrls = (fileUrl: string, index: number) => {
     const newFileUrls = [...fileUrls];
     newFileUrls[index] = fileUrl;
     setFileUrls(newFileUrls);
   };
 
-  // 📌 사진삭제
   const onClickImageDelete = (index: number) => () => {
     const newFileUrls = [...fileUrls];
     newFileUrls.splice(index, 1);
@@ -132,6 +155,12 @@ export default function ShopWrite(props: any) {
       formState={formState}
       handleSubmit={handleSubmit}
       isEdit={props.isEdit}
+      onClickRoutingModal={onClickRoutingModal}
+      onClickErrorModal={onClickErrorModal}
+      onClickUpdatedModal={onClickUpdatedModal}
+      alertModal={alertModal}
+      modalContents={modalContents}
+      errorAlertModal={errorAlertModal}
     />
   );
 }

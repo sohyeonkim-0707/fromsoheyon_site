@@ -27,7 +27,7 @@ export default function ShopCommentAnswer(props) {
     }
   };
 
-  // 📌 답글 등록하기
+  // 답글 등록하기
   const submitAnswer = async (data) => {
     try {
       await createUseditemQuestionAnswer({
@@ -52,7 +52,7 @@ export default function ShopCommentAnswer(props) {
     }
   };
 
-  // 📌 답글 수정하기
+  // 답글 수정하기
   const updateAnswer = async (data) => {
     try {
       await updateUseditemQuestionAnswer({

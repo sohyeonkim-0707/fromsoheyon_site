@@ -1,6 +1,4 @@
-// 수정하기
-
-import CommunityWrite from "../../../../src/components/units/commnunity/write/community.container";
+import CommunityWrite from "../../../../src/components/units/commnunity/write/communityWrite.container";
 
 export default function CommunityEditPage() {
   return <CommunityWrite isEdit={true} />;

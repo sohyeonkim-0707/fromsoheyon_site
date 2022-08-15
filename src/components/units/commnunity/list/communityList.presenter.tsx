@@ -1,8 +1,8 @@
 import Pagination from "../../../commons/pagination";
 import Item from "./item/item.container";
-import * as S from "./list.styles";
+import * as S from "./communityList.styles";
 import { v4 as uuidv4 } from "uuid";
-import { ICommunityUIProps } from "./list.types";
+import { ICommunityUIProps } from "./communityList.types";
 
 export default function CommunityUI(props: ICommunityUIProps) {
   return (

@@ -16,4 +16,9 @@ export interface ISignUpProps {
   register: UseFormRegister<FormValues>;
   handleSubmit: UseFormHandleSubmit<FormValues>;
   formState: UseFormStateReturn<FieldValues>;
+  onClickRoutingModal: () => void;
+  onClickErrorModal: () => void;
+  alertModal: boolean;
+  modalContents: string;
+  errorAlertModal: boolean;
 }

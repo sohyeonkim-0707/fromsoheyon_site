@@ -1,5 +1,5 @@
 import ShopCommentWriteUI from "./commetWrite.presenter";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useMutation } from "@apollo/client";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
@@ -23,16 +23,26 @@ export default function ShopCommentWrite(props) {
   const [createUseditemQuestion] = useMutation(CREATE_USED_ITEM_QUESTION);
   const [updateUseditemQuestion] = useMutation(UPDATE_USED_ITEM_QUESTION);
 
-  const { register, handleSubmit, formState, watch, setValue, reset } = useForm(
-    {
-      resolver: yupResolver(schema),
-      mode: "onChange",
-    }
-  );
+  const { register, handleSubmit, formState, watch, reset } = useForm({
+    resolver: yupResolver(schema),
+    mode: "onChange",
+  });
+
+  const [alertModal, setAlertModal] = useState(false);
+  const [modalContents, setModalContents] = useState("");
+  const [errorAlertModal, setErrorAlertModal] = useState(false);
+
+  const onClickRoutingModal = () => {
+    setAlertModal(false);
+  };
+
+  const onClickErrorModal = () => {
+    setErrorAlertModal(false);
+  };
 
   const contentsLength = watch().contents?.length;
 
-  // 📌 댓글 등록하기
+  // 댓글 등록하기
   const onClickComment = async (data) => {
     try {
       await createUseditemQuestion({
@@ -49,17 +59,19 @@ export default function ShopCommentWrite(props) {
           },
         ],
       });
-      alert("댓글이 등록되었습니다.");
-      setValue("contents", "");
+      setAlertModal(true);
+      setModalContents("댓글 등록이 완료되었습니다!");
+      reset();
     } catch (error) {
-      if (error instanceof Error) alert("댓글이 등록되지 않았습니다.");
+      setModalContents("댓글이 등록되지 않았습니다.");
+      setErrorAlertModal(true);
     }
   };
 
-  // 📌 댓글 수정하기
+  // 댓글 수정하기
   const onClickUpdateComment = async (data) => {
+    if (!props.el?._id) return;
     try {
-      if (!props.el?._id) return;
       await updateUseditemQuestion({
         variables: {
           updateUseditemQuestionInput: {
@@ -74,11 +86,14 @@ export default function ShopCommentWrite(props) {
           },
         ],
       });
-      alert("댓글이 수정되었습니다.");
+      setAlertModal(true);
+      setModalContents("댓글이 수정되었습니다.");
       props.setIsEdit?.(false);
     } catch (error) {
-      if (error instanceof Error) console.log(error.message);
-      alert("수정되지 않았습니다.");
+      if (error instanceof Error) {
+        setModalContents(error.message);
+        setErrorAlertModal(true);
+      }
     }
   };
 
@@ -98,6 +113,11 @@ export default function ShopCommentWrite(props) {
       isEdit={props.isEdit}
       onClickUpdateComment={onClickUpdateComment}
       el={props.el}
+      alertModal={alertModal}
+      modalContents={modalContents}
+      errorAlertModal={errorAlertModal}
+      onClickRoutingModal={onClickRoutingModal}
+      onClickErrorModal={onClickErrorModal}
     />
   );
 }

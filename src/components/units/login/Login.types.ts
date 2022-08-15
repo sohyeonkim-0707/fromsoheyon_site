@@ -16,4 +16,9 @@ export interface ILoginUIProps {
   register: UseFormRegister<FormValues>;
   handleSubmit: UseFormHandleSubmit<FormValues>;
   formState: FormState<FormValues>;
+  onClickRoutingModal: () => void;
+  onClickErrorModal: () => void;
+  alertModal: boolean;
+  modalContents: string;
+  errorAlertModal: boolean;
 }

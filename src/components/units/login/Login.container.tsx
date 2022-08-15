@@ -11,7 +11,8 @@ import {
   IMutation,
   IMutationLoginUserArgs,
 } from "../../../commons/types/generated/types";
-import { FormValues } from "../commnunity/write/community.types";
+import { FormValues } from "../commnunity/write/communityWrite.types";
+import { useState } from "react";
 
 export default function Login() {
   const router = useRouter();
@@ -28,6 +29,19 @@ export default function Login() {
     mode: "onChange",
   });
 
+  const [alertModal, setAlertModal] = useState(false);
+  const [modalContents, setModalContents] = useState("");
+  const [errorAlertModal, setErrorAlertModal] = useState(false);
+
+  const onClickRoutingModal = () => {
+    router.push("/");
+    setAlertModal(false);
+  };
+
+  const onClickErrorModal = () => {
+    setErrorAlertModal(false);
+  };
+
   const onClickLogin = async (data: IMutationLoginUserArgs) => {
     try {
       const result = await loginUser({
@@ -37,7 +51,7 @@ export default function Login() {
       });
       const accessToken = result.data.loginUser.accessToken;
       setAccessToken(accessToken);
-      router.push("/");
+
       const resultUserInfo = await client.query({
         query: FETCH_USER_LOGGED_IN,
         context: {
@@ -47,9 +61,11 @@ export default function Login() {
         },
       });
       const userInfo = resultUserInfo.data?.fetchUserLoggedIn;
-      alert(`${userInfo?.name}님 반갑습니다.`);
+      setAlertModal(true);
+      setModalContents(`${userInfo?.name}님 반갑습니다.`);
     } catch (error) {
-      alert(error.message);
+      setModalContents(error.message);
+      setErrorAlertModal(true);
     }
   };
 
@@ -61,10 +77,14 @@ export default function Login() {
     <LoginUI
       onClickSignUp={onClickSignUp}
       onClickLogin={onClickLogin}
-      // form
       register={register}
       handleSubmit={handleSubmit}
       formState={formState}
+      onClickRoutingModal={onClickRoutingModal}
+      onClickErrorModal={onClickErrorModal}
+      alertModal={alertModal}
+      modalContents={modalContents}
+      errorAlertModal={errorAlertModal}
     />
   );
 }

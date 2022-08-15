@@ -5,7 +5,7 @@ import { getDate } from "../../../../../commons/libraries/date";
 import ShopCommentAnswer from "../../answer/answer.container";
 import { FETCH_USER_LOGGED_IN } from "../../../../units/login/Login.quries";
 import { useQuery } from "@apollo/client";
-import { FETCH_USED_ITEM } from "../../../../units/shop/detail/ShopDetail.queris";
+import { FETCH_USED_ITEM } from "../../../../units/shop/detail/shopDetail.queris";
 import { useRouter } from "next/router";
 import AnswerList from "../../answerList/answerList.container";
 
