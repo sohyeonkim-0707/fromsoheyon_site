@@ -1,4 +1,5 @@
 import { ApolloQueryResult, OperationVariables } from "@apollo/client";
+import { MouseEvent } from "react";
 
 export interface ICommunityUIProps {
   data: any;
@@ -9,7 +10,8 @@ export interface ICommunityUIProps {
   refetchBoardsCount: (
     variables?: Partial<OperationVariables>
   ) => Promise<ApolloQueryResult<any>>;
-  onClickMoveToBoardDetail: (el: any) => (event: any) => void;
+  onClickMoveToCommunityDetail: (event: MouseEvent<HTMLDivElement>) => void;
+
   onClickNew: () => void;
   keyword: string;
   onChangeKeyword: (value: string) => void;

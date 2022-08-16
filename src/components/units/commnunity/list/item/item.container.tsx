@@ -61,10 +61,7 @@ export default function Item(props: any) {
   return (
     <Row>
       <Number> {props.index + index + 1}</Number>
-      <Title
-        id={props.el._id}
-        onClick={props.onClickMoveToBoardDetail(props.el)}
-      >
+      <Title id={props.el._id} onClick={props.onClickMoveToCommunityDetail}>
         {props.el.title
           .replaceAll(props.keyword, `#$%${props.keyword}#$%`)
           .split("#$%")
