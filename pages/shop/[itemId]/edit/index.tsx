@@ -3,3 +3,5 @@ import ShopWrite from "../../../../src/components/units/shop/write/shopWrite.con
 export default function ShopEditPage() {
   return <ShopWrite isEdit={true} />;
 }
+
+// build
