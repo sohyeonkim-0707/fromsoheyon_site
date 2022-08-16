@@ -10,7 +10,7 @@ export interface ICommunityUIProps {
   refetchBoardsCount: (
     variables?: Partial<OperationVariables>
   ) => Promise<ApolloQueryResult<any>>;
-  onClickMoveToCommunityDetail: (event: MouseEvent<HTMLDivElement>) => void;
+  onClickDetail: (event: MouseEvent<HTMLDivElement>) => void;
 
   onClickNew: () => void;
   keyword: string;

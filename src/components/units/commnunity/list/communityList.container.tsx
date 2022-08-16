@@ -26,7 +26,7 @@ export default function Community() {
     setKeyword(value);
   };
 
-  const onClickMoveToCommunityDetail = (event: MouseEvent<HTMLDivElement>) => {
+  const onClickDetail = (event: MouseEvent<HTMLDivElement>) => {
     if (event.target instanceof Element)
       router.push(`/community/${event.currentTarget.id}`);
   };
@@ -43,7 +43,7 @@ export default function Community() {
       count={dataBoardsCount?.fetchBoardsCount}
       keyword={keyword}
       onChangeKeyword={onChangeKeyword}
-      onClickMoveToCommunityDetail={onClickMoveToCommunityDetail}
+      onClickDetail={onClickDetail}
       onClickNew={onClickNew}
     />
   );

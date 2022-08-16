@@ -29,7 +29,7 @@ export default function CommunityUI(props: ICommunityUIProps) {
             key={uuidv4()}
             el={el}
             index={index}
-            onClickMoveToCommunityDetail={props.onClickMoveToCommunityDetail}
+            onClickDetail={props.onClickDetail}
           />
         ))}
       </S.Table>
