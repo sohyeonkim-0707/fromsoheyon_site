@@ -1,11 +1,12 @@
 /* eslint-disable array-callback-return */
-import * as S from "./shopWrite.styles";
+import * as S from "./ShopWrite.styles";
 import Upload from "../../../commons/uploads/upload.container";
 import { v4 as uuidv4 } from "uuid";
 import useMoveToPage from "../../../commons/hooks/useMoveToPage";
-import { IShopWriteUIProps } from "./shopWrite.types";
+
 import AlertModal from "../../../commons/modals/01/AlertModal";
 import ErrorModal from "../../../commons/modals/02/ErrorModal";
+import { IShopWriteUIProps } from "./ShopWrite.types";
 
 export default function ShopWriteUI(props: IShopWriteUIProps) {
   const { onClickMoveToPage } = useMoveToPage();
