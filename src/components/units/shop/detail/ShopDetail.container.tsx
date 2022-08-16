@@ -9,12 +9,12 @@ import {
   IMutationDeleteUseditemArgs,
 } from "../../../../commons/types/generated/types";
 import { FETCH_USER_LOGGED_IN } from "../../login/Login.quries";
-import ShopDetailUI from "./ShopDetail.presenter";
+import ShopDetailUI from "./shopDetail.presenter";
 import {
   FETCH_USED_ITEM,
   DELETE_USED_ITEM,
   CREATE_POINT_TRANSACTION_OF_BUYING_AND_SELLING,
-} from "./ShopDetail.queris";
+} from "./shopDetail.queris";
 
 export default function ShopDetail() {
   const router = useRouter();

@@ -92,6 +92,12 @@ export const Nodata = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
+  @media ${breakPoints.tablet} {
+    font-size: 20px;
+  }
+  @media ${breakPoints.mobile} {
+    font-size: 10px;
+  }
 `;
 
 export const Photo = styled.img`

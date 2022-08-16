@@ -1,9 +1,9 @@
 import Item from "./item/Item.container";
-import * as S from "./ShopList.styles";
+import * as S from "./shopList.styles";
 import InfiniteScroll from "react-infinite-scroller";
 import { v4 as uuidv4 } from "uuid";
 import styled from "@emotion/styled";
-import { IShopListProps } from "./ShopList.types";
+import { IShopListProps } from "./shopList.types";
 
 const Scroll = styled.div`
   width: 100%;

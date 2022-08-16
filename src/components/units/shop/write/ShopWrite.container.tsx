@@ -1,16 +1,15 @@
-import ShopWriteUI from "./ShopWrite.presenter";
-import { FormValues } from "./ShopWrite.types";
+import { FormValues } from "./shopWrite.types";
 import { useMutation, useQuery } from "@apollo/client";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { editSchema, schema } from "./ShopWrite.validation";
+import { editSchema, schema } from "./shopWrite.validation";
 import {
   CREATE_USED_ITEM,
   FETCH_USED_ITEM,
   UPDATE_USED_ITEM,
-} from "./ShopWrite.queris";
+} from "./shopWrite.queris";
 import {
   IMutation,
   IMutationCreateUseditemArgs,
@@ -18,6 +17,7 @@ import {
   IQuery,
   IQueryFetchUseditemArgs,
 } from "../../../../commons/types/generated/types";
+import ShopWriteUI from "./shopWrite.presenter";
 
 export default function ShopWrite(props: any) {
   const router = useRouter();
