@@ -3,8 +3,8 @@ import ShopCommentWrite from "../../../commons/comment/write/commetWrite.contain
 import AlertModal from "../../../commons/modals/01/AlertModal";
 import ErrorModal from "../../../commons/modals/02/ErrorModal";
 
-import * as S from "./shopDetail.styles";
-import { IShopDetailUIProps } from "./shopDetail.types";
+import * as S from "./ShopDetail.styles";
+import { IShopDetailUIProps } from "./ShopDetail.types";
 
 export default function ShopDetailUI(props: IShopDetailUIProps) {
   return (

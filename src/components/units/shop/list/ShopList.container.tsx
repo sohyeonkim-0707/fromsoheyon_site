@@ -5,8 +5,8 @@ import {
   IQuery,
   IQueryFetchUseditemsArgs,
 } from "../../../../commons/types/generated/types";
-import ShopListUI from "./shopList.presenter";
-import { FETCH_USED_ITEMS } from "./shopList.queris";
+import ShopListUI from "./ShopList.presenter";
+import { FETCH_USED_ITEMS } from "./ShopList.queris";
 
 export default function Shop() {
   const router = useRouter();

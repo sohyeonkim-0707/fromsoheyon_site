@@ -9,12 +9,12 @@ import {
   IMutationDeleteUseditemArgs,
 } from "../../../../commons/types/generated/types";
 import { FETCH_USER_LOGGED_IN } from "../../login/Login.quries";
-import ShopDetailUI from "./shopDetail.presenter";
+import ShopDetailUI from "./ShopDetail.presenter";
 import {
   FETCH_USED_ITEM,
   DELETE_USED_ITEM,
   CREATE_POINT_TRANSACTION_OF_BUYING_AND_SELLING,
-} from "./shopDetail.queris";
+} from "./ShopDetail.queris";
 
 export default function ShopDetail() {
   const router = useRouter();
@@ -40,17 +40,15 @@ export default function ShopDetail() {
   const [errorAlertModal, setErrorAlertModal] = useState(false);
   const [isRoute, setIsRoute] = useState(false);
 
-  // 이동모달
   const onClickRoutingModal = () => {
     router.push(`/shop`);
     setAlertModal(false);
   };
-  // 확인모달
+
   const onClickConfirmModal = () => {
     setAlertModal(false);
   };
 
-  // 에러모달
   const onClickErrorModal = () => {
     setErrorAlertModal(false);
   };
