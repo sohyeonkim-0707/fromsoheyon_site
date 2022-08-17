@@ -20,17 +20,15 @@ export default function CommunityDetail() {
   const [errorAlertModal, setErrorAlertModal] = useState(false);
   const [isRoute, setIsRoute] = useState(false);
 
-  // 이동모달
   const onClickRoutingModal = () => {
     router.push(`/community`);
     setAlertModal(false);
   };
-  // 확인모달
+
   const onClickConfirmModal = () => {
     setAlertModal(false);
   };
 
-  // 에러모달
   const onClickErrorModal = () => {
     setErrorAlertModal(false);
   };

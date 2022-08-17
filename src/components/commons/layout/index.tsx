@@ -1,4 +1,3 @@
-// 레이아웃 컴포넌트 합치는 곳
 import { ReactNode } from "react";
 import styled from "@emotion/styled";
 import Navigation from "./navigation/Navigation.container";

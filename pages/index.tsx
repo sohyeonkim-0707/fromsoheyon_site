@@ -1,8 +1,8 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import styled from "@emotion/styled";
+
 const Wrapper = styled.div`
   width: 100%;
   overflow: hidden;

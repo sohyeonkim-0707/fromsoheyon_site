@@ -14,12 +14,12 @@ export default function AnswerListItemUI(props) {
     DELETE_USED_ITEM_QUESTION_ANSWER
   );
 
-  // 📌 답글 수정하기
+  // 답글 수정하기
   const onClickUpdateAnswer = () => {
     setIsEdit((prev) => !prev);
   };
 
-  // 📌 답글 삭제하기
+  // 답글 삭제하기
   const onClickDeleteAnswer = async (event) => {
     try {
       await deleteUseditemQuestionAnswer({

@@ -46,20 +46,20 @@ export default function KakaoMapPage() {
           offset: new window.kakao.maps.Point(27, 69),
         };
 
-        // 📌 마커가 표시될 위치
+        // 마커가 표시될 위치
         const markerImage = new window.kakao.maps.MarkerImage(
           imageSrc,
           imageSize,
           imageOption
         );
 
-        // 📌 마커 생성
+        // 마커 생성
         const marker = new window.kakao.maps.Marker({
           position: map.getCenter(),
           image: markerImage,
         });
 
-        // 📌 마커가 지도 위에 표시되도록 설정
+        // 마커가 지도 위에 표시되도록 설정
         marker.setMap(map);
 
         // eslint-disable-next-line no-new, new-cap

@@ -66,7 +66,7 @@ export default function CommunityWrite(props: any) {
     setAlertModal(false);
   };
 
-  // 게시글 등록하기
+  // 등록하기
   const onClickUploadBoard = async (data: ICreateBoardInput) => {
     try {
       const result = await createBoard({
