@@ -29,10 +29,10 @@ export default function first() {
   return (
     <Wrapper>
       <Slider {...settings}>
-        <MainPhoto src="/01.jpg"></MainPhoto>
-        <MainPhoto src="/02.jpg"></MainPhoto>
-        <MainPhoto src="/03.jpg"></MainPhoto>
-        <MainPhoto src="/04.jpg"></MainPhoto>
+        <MainPhoto src="/01.jpg" alt="베를린 공원"></MainPhoto>
+        <MainPhoto src="/02.jpg" alt="냇가 얼음"></MainPhoto>
+        <MainPhoto src="/03.jpg" alt="들꽃과 자전거"></MainPhoto>
+        <MainPhoto src="/04.jpg" alt="나무"></MainPhoto>
       </Slider>
     </Wrapper>
   );
