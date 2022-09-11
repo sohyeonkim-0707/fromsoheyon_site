@@ -33,6 +33,7 @@ export default function ShopDetail() {
     Pick<IMutation, "createPointTransactionOfBuyingAndSelling">,
     IMutationCreatePointTransactionOfBuyingAndSellingArgs
   >(CREATE_POINT_TRANSACTION_OF_BUYING_AND_SELLING);
+
   const [, setBasketItems] = useRecoilState(basketItemState);
 
   const [alertModal, setAlertModal] = useState(false);

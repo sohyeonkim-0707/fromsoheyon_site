@@ -44,7 +44,7 @@ export default function PaymentUI(props) {
               <option value="100">100원</option>
               <option value="500">500원</option>
               <option value="1000">1,000원</option>
-              <option value="5000">5,000원</option>
+              <option value="5000">5,000</option>
               <option value="10000">10,000원</option>
             </S.Select>
             <S.BtnBox>
